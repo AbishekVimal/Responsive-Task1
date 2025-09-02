@@ -94,10 +94,15 @@ header>p{
         ;
     }
 }
-/* 
-.layout-grid > *{
-    flex:1;
-} */
+
+.layout-grid{
+        grid-template-areas: 
+        '... one   ....'
+        '... two   ...'
+        '... three ...'
+        '... four ....'
+        ;
+    }
 
 .card{
     --br:0.325rem;
