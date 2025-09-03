@@ -84,6 +84,26 @@ header>p{
     gap:var(--gap);
 }
 
+.layout-grid{
+        grid-template-areas: 
+        '... one   ...'
+        '... two   ...'
+        '... three ...'
+        '... four  ...'
+        ;
+    }
+
+@media(min-width:600px){
+    .layout-grid{
+        grid-template-areas: 
+        'one  two'
+        'one  two'
+        'three four'
+        'three four'
+        ;
+    }
+}
+
 @media(min-width:800px){
     .layout-grid{
         grid-template-areas: 
@@ -95,14 +115,6 @@ header>p{
     }
 }
 
-.layout-grid{
-        grid-template-areas: 
-        '... one   ....'
-        '... two   ...'
-        '... three ...'
-        '... four ....'
-        ;
-    }
 
 .card{
     --br:0.325rem;
